@@ -1,0 +1,15 @@
+:root[data-mantine-color-scheme='light'] {
+  --layout-bg: #fafafa;
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  --layout-bg: #333333;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mantine-ScrollArea-thumb {
+  background-color: var(--border-color);
+}
