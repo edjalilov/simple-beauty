@@ -2,12 +2,16 @@
   --layout-bg: #fafafa;
   --footer-bg: #ffffff;
   --border-color: #e8e8e8;
+  --main-color: #906798;
+  --secondary-color: #555f65;
 }
 
 :root[data-mantine-color-scheme='dark'] {
   --layout-bg: #333333;
   --footer-bg: #292929;
   --border-color: #474747;
+  --main-color: #aa8ab0;
+  --secondary-color: #c9c9c9;
 }
 
 body {
