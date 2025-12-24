@@ -1,0 +1,26 @@
+.layout {
+  background-color: var(--layout-bg);
+  height: 100%;
+  overflow: hidden;
+}
+
+.header {
+  background-color: var(--layout-bg);
+}
+
+.main {
+  max-width: 575px;
+  margin: 0 auto;
+  overflow-y: auto;
+  height: 100%;
+  position: relative;
+  --webkit-overflow-scrolling: touch;
+}
+
+.footer {
+  border-top: 1px solid var(--border-color);
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--footer-bg);
+}

@@ -1,8 +1,10 @@
 import cn from './main-layout.module.css'
 
-import { AppShell } from '@mantine/core'
+import { FooterLayout } from '../../footer-layout'
+import { HeaderLayout } from '../../header-layout'
+import { AppShell, ScrollArea } from '@mantine/core'
 import { ASSETS } from '@shared/constants/assets'
-import { ErrorMessage } from '@shared/ui/error-message/error-message'
+import { ErrorMessage, Loader } from '@shared/ui'
 import { Suspense } from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
 import { useTranslation } from 'react-i18next'
@@ -20,14 +22,29 @@ export const MainLayout = () => {
   )
 
   return (
-    <AppShell>
+    <AppShell
+      className={cn.layout}
+      header={{ height: 50 }}
+      footer={{ height: 65 }}
+      padding="md"
+    >
+      <AppShell.Header className={cn.header} withBorder={false}>
+        <HeaderLayout />
+      </AppShell.Header>
+
       <AppShell.Main className={cn.main}>
         <ErrorBoundary fallback={fallback}>
-          <Suspense>
-            <Outlet />
+          <Suspense fallback={<Loader />}>
+            <ScrollArea h="100%" mx="auto" scrollbarSize={0}>
+              <Outlet />
+            </ScrollArea>
           </Suspense>
         </ErrorBoundary>
       </AppShell.Main>
+
+      <AppShell.Footer className={cn.footer} p="xs" withBorder={false}>
+        <FooterLayout />
+      </AppShell.Footer>
     </AppShell>
   )
 }
