@@ -1,0 +1,7 @@
+export { IconCalendar } from './icon-calendar'
+export { IconCalendarFilled } from './icon-calendar-filled'
+export { IconHistory } from './icon-history'
+export { IconHome } from './icon-home'
+export { IconHomeFilled } from './icon-home-filled'
+export { IconProfile } from './icon-profile'
+export { IconProfileFilled } from './icon-profile-filled'

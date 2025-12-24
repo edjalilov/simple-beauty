@@ -1,13 +1,12 @@
 import type { INavigationItem, TFunction } from '@shared/types'
 import {
-  IconAnorPromotions,
-  IconAnorPromotionsFilled,
-  IconDeviceGamepad,
-  IconDeviceGamepadFilled,
-  IconGift,
-  IconGiftFilled,
+  IconCalendar,
+  IconCalendarFilled,
+  IconHistory,
   IconHome,
   IconHomeFilled,
+  IconProfile,
+  IconProfileFilled,
 } from '@shared/ui/icons'
 
 export const getNavigationItems = (t: TFunction): INavigationItem[] => {
@@ -15,20 +14,20 @@ export const getNavigationItems = (t: TFunction): INavigationItem[] => {
     { path: '/', icon: IconHome, iconFilled: IconHomeFilled, label: t('home') },
     {
       path: '/appointments',
-      icon: IconAnorPromotions,
-      iconFilled: IconAnorPromotionsFilled,
+      icon: IconCalendar,
+      iconFilled: IconCalendarFilled,
       label: t('appointments'),
     },
     {
       path: '/history',
-      icon: IconDeviceGamepad,
-      iconFilled: IconDeviceGamepadFilled,
+      icon: IconHistory,
+      iconFilled: IconHistory,
       label: t('history'),
     },
     {
       path: '/profile',
-      icon: IconGift,
-      iconFilled: IconGiftFilled,
+      icon: IconProfile,
+      iconFilled: IconProfileFilled,
       label: t('profile'),
     },
   ]

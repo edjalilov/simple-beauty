@@ -1,13 +1,13 @@
 import { getNavigationItems } from './get-navigation-items'
 import {
-  IconAnorPromotions,
-  IconAnorPromotionsFilled,
-  IconDeviceGamepad,
-  IconDeviceGamepadFilled,
+  IconCalendar,
+  IconCalendarFilled,
+  IconHistory,
   IconHome,
   IconHomeFilled,
+  IconProfile,
+  IconProfileFilled,
 } from '@shared/ui/icons'
-import { IconGift, IconGiftFilled } from '@shared/ui/icons'
 import { describe, expect, it, vi } from 'vitest'
 
 describe('getNavigationItems', () => {
@@ -30,36 +30,36 @@ describe('getNavigationItems', () => {
     })
   })
 
-  it('should return correct promotions item', () => {
+  it('should return correct appointments item', () => {
     const items = getNavigationItems(mockT)
 
     expect(items[1]).toEqual({
-      path: '/promotions',
-      icon: IconAnorPromotions,
-      iconFilled: IconAnorPromotionsFilled,
-      label: 'promotions',
+      path: '/appointments',
+      icon: IconCalendar,
+      iconFilled: IconCalendarFilled,
+      label: 'appointments',
     })
   })
 
-  it('should return correct gamification item', () => {
+  it('should return correct history item', () => {
     const items = getNavigationItems(mockT)
 
     expect(items[2]).toEqual({
-      path: '/gamification',
-      icon: IconDeviceGamepad,
-      iconFilled: IconDeviceGamepadFilled,
-      label: 'gamifications',
+      path: '/history',
+      icon: IconHistory,
+      iconFilled: IconHistory,
+      label: 'history',
     })
   })
 
-  it('should return correct my-prizes item', () => {
+  it('should return correct profile item', () => {
     const items = getNavigationItems(mockT)
 
     expect(items[3]).toEqual({
-      path: '/my-prizes',
-      icon: IconGift,
-      iconFilled: IconGiftFilled,
-      label: 'myPrizes',
+      path: '/profile',
+      icon: IconProfile,
+      iconFilled: IconProfileFilled,
+      label: 'profile',
     })
   })
 
@@ -67,8 +67,8 @@ describe('getNavigationItems', () => {
     getNavigationItems(mockT)
 
     expect(mockT).toHaveBeenCalledWith('home')
-    expect(mockT).toHaveBeenCalledWith('promotions')
-    expect(mockT).toHaveBeenCalledWith('gamifications')
-    expect(mockT).toHaveBeenCalledWith('myPrizes')
+    expect(mockT).toHaveBeenCalledWith('appointments')
+    expect(mockT).toHaveBeenCalledWith('history')
+    expect(mockT).toHaveBeenCalledWith('profile')
   })
 })
