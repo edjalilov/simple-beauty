@@ -1,4 +1,8 @@
 {
+  "home": "Home",
+  "appointments": "Appointments",
+  "history": "History",
+  "profile": "Profile",
   "errorTitle": "Error",
   "errorSubtitle": "Something went wrong"
 }

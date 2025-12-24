@@ -1,4 +1,8 @@
 {
+  "home": "Bosh sahifa",
+  "appointments": "Yozuvlar",
+  "history": "Tarix",
+  "profile": "Profil",
   "errorSubtitle": "Tez orada hammasini tuzatamiz.",
   "errorRetryText": "Qayta urinib koʻring"
 }
