@@ -1,7 +1,19 @@
 :root[data-mantine-color-scheme='light'] {
   --layout-bg: #fafafa;
+  --footer-bg: #ffffff;
+  --border-color: #e8e8e8;
 }
 
 :root[data-mantine-color-scheme='dark'] {
   --layout-bg: #333333;
+  --footer-bg: #292929;
+  --border-color: #474747;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
 }
