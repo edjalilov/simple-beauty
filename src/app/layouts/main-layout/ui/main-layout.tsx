@@ -1,7 +1,6 @@
 import cn from './main-layout.module.css'
 
 import { FooterLayout } from '../../footer-layout'
-import { HeaderLayout } from '../../header-layout'
 import { AppShell, ScrollArea } from '@mantine/core'
 import { ASSETS } from '@shared/constants'
 import { ErrorMessage, Loader } from '@shared/ui'
@@ -22,16 +21,7 @@ export const MainLayout = () => {
   )
 
   return (
-    <AppShell
-      className={cn.layout}
-      header={{ height: 50 }}
-      footer={{ height: 65 }}
-      padding="md"
-    >
-      <AppShell.Header className={cn.header} withBorder={false}>
-        <HeaderLayout />
-      </AppShell.Header>
-
+    <AppShell className={cn.layout} footer={{ height: 65 }} padding="md">
       <AppShell.Main className={cn.main}>
         <ErrorBoundary fallback={fallback}>
           <Suspense fallback={<Loader />}>

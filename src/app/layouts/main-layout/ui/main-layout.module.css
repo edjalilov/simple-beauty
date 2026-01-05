@@ -4,10 +4,6 @@
   overflow: hidden;
 }
 
-.header {
-  background-color: var(--layout-bg);
-}
-
 .main {
   max-width: 575px;
   margin: 0 auto;
