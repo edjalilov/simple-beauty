@@ -1,9 +1,0 @@
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  width: 100%;
-  max-width: 575px;
-  padding: 10px 16px;
-  margin: 0 auto;
-}
