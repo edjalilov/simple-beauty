@@ -1,5 +1,6 @@
 import cn from './home-page.module.css'
 
+import { Service } from '@entities/service'
 import { Stack } from '@mantine/core'
 import { SearchInput } from '@shared/ui'
 import { useState } from 'react'
@@ -16,6 +17,7 @@ export const HomePage = () => {
         value={searchValue}
         onChange={setSearchValue}
       />
+      <Service />
     </Stack>
   )
 }

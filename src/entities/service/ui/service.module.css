@@ -1,0 +1,13 @@
+.serviceItem {
+  border: 1px solid var(--border-color);
+  border-radius: var(--mantine-radius-md);
+}
+
+.segmentedControl {
+  min-width: max-content;
+}
+
+.segmentedControl :global(.mantine-SegmentedControl-label) {
+  min-width: 100px;
+  white-space: nowrap;
+}
