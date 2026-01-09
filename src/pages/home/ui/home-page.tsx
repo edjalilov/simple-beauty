@@ -1,5 +1,6 @@
 import cn from './home-page.module.css'
 
+import { Masters } from '@entities/master'
 import { Service } from '@entities/service'
 import { Stack } from '@mantine/core'
 import { SearchInput } from '@shared/ui'
@@ -18,6 +19,7 @@ export const HomePage = () => {
         onChange={setSearchValue}
       />
       <Service />
+      <Masters />
     </Stack>
   )
 }
