@@ -26,6 +26,7 @@ export const Service = () => {
           { label: 'Ресницы', value: 'eyelashes' },
           { label: 'Лицо', value: 'face' },
           { label: 'Тело', value: 'body' },
+          { label: 'Депиляция', value: 'depilation' },
         ]}
       />
     </ScrollArea>
