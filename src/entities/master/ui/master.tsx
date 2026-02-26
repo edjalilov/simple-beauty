@@ -9,7 +9,7 @@ export const Masters = () => {
   return (
     <Paper p="md">
       <Flex gap={16}>
-        <Avatar src={masters[0].avatarUrl} size="xl" />
+        <Avatar src={'/assets/ava.png'} size="xl" />
         <Stack gap={5} align="flex-start" justify="center">
           <Text>{masters[0].name}</Text>
           <Text>{masters[0].phone}</Text>
