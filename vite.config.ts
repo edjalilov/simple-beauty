@@ -36,6 +36,7 @@ const vitestConfig = defineVitestConfig({
 })
 
 const viteConfig = defineViteConfig({
+  base: '/SimpleBeauty/',
   optimizeDeps: {
     esbuildOptions: {
       plugins: [fixReactVirtualized],
