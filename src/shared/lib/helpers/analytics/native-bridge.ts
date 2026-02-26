@@ -76,7 +76,7 @@ export function initBridge(): void {
 
 export const nativeBridgeProvider: AnalyticsProvider = {
   logEvent(event: AnalyticsEvent) {
-    postToNative('logEvent', event)
+    postToNative('logEvent', { ...event, params: event.params ?? {} })
   },
   setUserProperty(key: string, value: string) {
     postToNative('setUserProperty', { key, value })
